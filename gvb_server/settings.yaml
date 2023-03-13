@@ -7,7 +7,7 @@ mysql:
   log_level: dev
 logger:
   level: info
-  prefix: '[gvb]'
+  prefix: "[gvb]"
   director: log
   show_line: true
   log_in_console: true
