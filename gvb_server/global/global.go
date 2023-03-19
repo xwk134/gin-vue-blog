@@ -1,7 +1,11 @@
 package global
 
-import "gvb_server/config"
+import (
+	"gorm.io/gorm"
+	"gvb_server/config"
+)
 
 var (
 	Config *config.Config
+	DB     *gorm.DB
 )

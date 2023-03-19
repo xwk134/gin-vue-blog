@@ -10,4 +10,6 @@ func main() {
 	// 读取配置文件
 	core.InitConf()
 	fmt.Println(global.Config)
+	core.InitGorm()
+	fmt.Println(global.DB)
 }
