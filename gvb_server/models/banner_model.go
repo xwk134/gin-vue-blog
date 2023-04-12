@@ -1,5 +1,6 @@
 package models
 
+// BannerModel banner表
 type BannerModel struct {
 	MODEL
 	Path string `json:"path"`                //图片路径

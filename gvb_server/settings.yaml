@@ -1,17 +1,58 @@
 mysql:
   host: 127.0.0.1
   port: 3306
+  config: ""
   db: gvb_db
   user: root
-  password: 123456
-  log_level: dev
+  password: "123456"
+  logLevel: ""
 logger:
   level: info
-  prefix: "[gvb]"
+  prefix: '[gvb]'
   director: log
-  show_line: true
-  log_in_console: true
+  show_line: "true"
+  log_in_console: "true"
 system:
-  host: "0.0.0.0"
+  host: 0.0.0.0
   port: 8080
   env: release
+site_info:
+  created_at: ""
+  bei_an: ""
+  title: ""
+  qq_image: ""
+  version: 6.2.1
+  email: ""
+  wechat_image: ""
+  name: ""
+  job: ""
+  addr: ""
+  slogan: ""
+  slogan_en: ""
+  web: ""
+  bilibili_url: ""
+  gitee_url: ""
+  github_url: ""
+qq:
+  app_id: ""
+  key: gghj548549jkj784598
+  redirect: ""
+qi_niu:
+  access_key: UMM-xx-FdRIf-xx
+  secret_key: xx
+  bucket: fengfengzhidao
+  cdn: xx://xx.xx.com
+  zone: xx
+  size: "5"
+email:
+  host: smtp.qq.com
+  port: 0
+  user: 123456@qq.com
+  password: xwk11343706
+  default_from_email: 枫枫知道
+  user_ssl: false
+  user_tls: false
+jwy:
+  secret: ""
+  expires: 0
+  issuer: ""

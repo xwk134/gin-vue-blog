@@ -4,12 +4,12 @@ type ErrorCode int
 
 const (
 	SettingsError ErrorCode = 1001 //系统错误
-	TestError     ErrorCode = 1002 //请求超时
+	ArgumentError ErrorCode = 1002 //参数错误
 )
 
 var (
 	ErrorMap = map[ErrorCode]string{
 		SettingsError: "系统错误",
-		TestError:     "请求超时",
+		ArgumentError: "参数错误",
 	}
 )
