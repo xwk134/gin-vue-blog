@@ -16,6 +16,9 @@ system:
   host: 0.0.0.0
   port: 8080
   env: release
+upload:
+  size: 2
+  path: uploads/file
 site_info:
   created_at: ""
   bei_an: ""
@@ -38,6 +41,7 @@ qq:
   key: gghj548549jkj784598
   redirect: ""
 qi_niu:
+  enable: false
   access_key: UMM-xx-FdRIf-xx
   secret_key: xx
   bucket: fengfengzhidao
