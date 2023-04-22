@@ -2,8 +2,14 @@ package res
 
 import (
 	"github.com/gin-gonic/gin"
+	"gvb_server/utils"
 	"net/http"
 )
+
+type ListResponse[T any] struct {
+	Count int64 `json:"count"`
+	List  T     `json:"list"`
+}
 
 type Response struct {
 	Code int    `json:"code"`
@@ -32,6 +38,13 @@ func OkWithData(data any, c *gin.Context) {
 	Result(0, data, "成功", c)
 }
 
+func OkWithList(list any, count int64, c *gin.Context) {
+	OkWithData(ListResponse[any]{
+		List:  list,
+		Count: count,
+	}, c)
+}
+
 func OkWithMessage(msg string, c *gin.Context) {
 	Result(Success, map[string]any{}, msg, c)
 }
@@ -42,6 +55,11 @@ func Fail(data any, msg string, c *gin.Context) {
 
 func FailWithMessage(msg string, c *gin.Context) {
 	Result(Error, map[string]any{}, msg, c)
+}
+
+func FailWithError(err error, obj any, c *gin.Context) {
+	msg := utils.GetValidMsg(err, obj)
+	FailWithMessage(msg, c)
 }
 
 func FailWithCode(code ErrorCode, c *gin.Context) {

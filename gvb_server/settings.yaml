@@ -1,11 +1,11 @@
 mysql:
   host: 127.0.0.1
   port: 3306
-  config: ""
+  config: "charset=utf8&parseTime=true"
   db: gvb_db
   user: root
   password: "123456"
-  logLevel: ""
+  logLevel: "dev"
 logger:
   level: info
   prefix: '[gvb]'
