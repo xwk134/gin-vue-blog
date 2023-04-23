@@ -41,13 +41,13 @@ qq:
   key: gghj548549jkj784598
   redirect: ""
 qi_niu:
-  enable: false
-  access_key: UMM-xx-FdRIf-xx
-  secret_key: xx
-  bucket: fengfengzhidao
-  cdn: xx://xx.xx.com
-  zone: xx
-  size: "5"
+  enable: true
+  access_key: _s5B-HcWimJDXGL8yBpPguYkhzHQYUyl6yhzXGjE
+  secret_key: Bt0g3IaLgpBPQsB84oVuj1lIbTfrmdlHLifG2rJr
+  bucket: suiyuezhidao
+  cdn: rtiwn4t60.hn-bkt.clouddn.com
+  zone: z2
+  size: 5
 email:
   host: smtp.qq.com
   port: 0
