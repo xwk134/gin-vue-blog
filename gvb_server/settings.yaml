@@ -44,9 +44,10 @@ qi_niu:
   enable: true
   access_key: _s5B-HcWimJDXGL8yBpPguYkhzHQYUyl6yhzXGjE
   secret_key: Bt0g3IaLgpBPQsB84oVuj1lIbTfrmdlHLifG2rJr
-  bucket: suiyuezhidao
-  cdn: rtiwn4t60.hn-bkt.clouddn.com
-  zone: z2
+  bucket: gotests
+  cdn: testgo.club/
+  zone: as0
+  prefix: "gvb"
   size: 5
 email:
   host: smtp.qq.com

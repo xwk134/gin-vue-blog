@@ -34,7 +34,7 @@ func getCfg(q config.QiNiu) storage.Config {
 	// 是否使用https域名
 	cfg.UseHTTPS = false
 	// 上传是否使用CDN上传加速
-	cfg.UseCdnDomains = false
+	cfg.UseCdnDomains = true
 	return cfg
 }
 
