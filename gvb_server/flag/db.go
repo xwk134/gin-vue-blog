@@ -13,6 +13,7 @@ func Makemigrations() {
 	global.DB.SetupJoinTable(&models.MenuModel{}, "Banners", &models.MenuBannerModel{})
 	// 生成表结构
 	global.DB.Migrator().AutoMigrate(
+		&models.AdvertModel{},
 		&models.UserModel{},
 		&models.CommentModel{},
 		&models.ArticleModel{},
