@@ -30,5 +30,5 @@ func Makemigrations() {
 		global.Log.Error("生成数据表结构失败")
 		return
 	}
-	global.Log.Error("生成数据表结构成功！")
+	global.Log.Info("生成数据表结构成功！")
 }
