@@ -1,10 +1,11 @@
 package advert_api
 
 import (
-	"github.com/gin-gonic/gin"
 	"gvb_server/global"
 	"gvb_server/models"
 	"gvb_server/models/res"
+
+	"github.com/gin-gonic/gin"
 )
 
 type AdvertRequest struct {
@@ -12,6 +13,7 @@ type AdvertRequest struct {
 	Href   string `json:"href" binding:"required,url" msg:"跳转链接非法" structs:"href"`     //跳转链接
 	Images string `json:"images" binding:"required,url" msg:"图片地址非法" structs:"images"` //图片
 	IsShow bool   `json:"is_show" msg:"请选择是否展示" structs:"is_show"`                     //是否展示
+
 }
 
 // AdvertCreateView 添加广告
