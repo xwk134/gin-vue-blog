@@ -35,7 +35,6 @@ func (MenuApi) MenuDetailView(c *gin.Context) {
 		MenuModel: menuModel,
 		Banners:   banners,
 	}
-
 	res.OkWithData(MenuResponse, c)
 	return
 }
