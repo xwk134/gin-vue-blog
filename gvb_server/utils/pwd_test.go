@@ -10,5 +10,5 @@ func TestHashAndSalt(t *testing.T) {
 }
 
 func TestComparePasswords(t *testing.T) {
-	fmt.Println(ComparePasswords("$2a$04$gPnTUpke58GCaX692v2pae2ccXh4evycKGgvSCZIJDBCmzL79M3UO", "123456"))
+	fmt.Println(ComparePasswords("$2a$04$vU6ZqEedbxHjU2yJdhooX.YYYjGXAUvXYGMzUk3lGmhlpSKqzrGwa", "123456"))
 }
