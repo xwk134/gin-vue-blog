@@ -25,6 +25,7 @@ func (ImagesApi) ImageUpdateView(c *gin.Context) {
 		res.FailWithMessage("文件不存在", c)
 		return
 	}
+
 	err = global.DB.Model(&imageModel).Update("name", cr.Name).Error
 	if err != nil {
 		res.FailWithMessage(err.Error(), c)

@@ -22,6 +22,7 @@ type MenRequest struct {
 	BannerTime    int         `json:"banner_time" structs:"banner_time"`
 	Sort          int         `json:"sort" binding:"required" msg:"请输入菜单序号" structs:"sort"` //排序
 	ImageSortList []ImageSort `json:"image_sort_list" structs:"-"`                          //具体图片的顺序
+
 }
 
 func (MenuApi) MenuCreateView(c *gin.Context) {

@@ -1,11 +1,10 @@
 package advert_api
 
 import (
+	"github.com/gin-gonic/gin"
 	"gvb_server/global"
 	"gvb_server/models"
 	"gvb_server/models/res"
-
-	"github.com/gin-gonic/gin"
 )
 
 type AdvertRequest struct {

@@ -31,6 +31,7 @@ func (AdvertApi) AdvertUpdateView(c *gin.Context) {
 		res.FailWithMessage("广告不存在", c)
 		return
 	}
+
 	maps := structs.Map(&cr)
 	err = global.DB.Debug().Model(&advert).Updates(maps).Error
 

@@ -27,6 +27,7 @@ func (UserApi) UserUpdateRoleView(c *gin.Context) {
 		res.FailWithMessage("用户id错误,用户不存在", c)
 		return
 	}
+
 	err = global.DB.Model(&user).Updates(map[string]any{
 		"role":      cr.Role,
 		"nick_name": cr.NickName,

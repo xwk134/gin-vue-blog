@@ -44,6 +44,7 @@ func (MenuApi) MenuUpdateView(c *gin.Context) {
 			return
 		}
 	}
+
 	// 普通更新
 	maps := structs.Map(&cr)
 	err = global.DB.Debug().Model(&menuModel).Updates(maps).Error

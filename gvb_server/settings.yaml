@@ -1,7 +1,7 @@
 mysql:
   host: 47.100.186.122
   port: 3306
-  config: "charset=utf8&parseTime=true"
+  config: "charset=utf8&parseTime=true&loc=Local"
   db: gvb_db
   user: root
   password: "meixi123"
@@ -51,11 +51,11 @@ qi_niu:
   size: 5
 email:
   host: smtp.qq.com
-  port: 0
-  user: 123456@qq.com
-  password: xwk11343706
+  port: 465
+  user: 2148583859@qq.com
+  password: zhdskujnuanxdiej
   default_from_email: 枫枫知道
-  user_ssl: false
+  user_ssl: true
   user_tls: false
 jwy:
   secret: ""

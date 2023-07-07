@@ -12,6 +12,7 @@ import (
 type UpdatePasswordRequest struct {
 	OldPwd string `json:"old_pwd" binding:"required" msg:"请输入旧密码"` // 旧密码
 	Pwd    string `json:"pwd"  binding:"required" msg:"请输入新密码"`    // 新密码
+
 }
 
 // UserUpdatePassword 修改登录人的id
@@ -35,6 +36,7 @@ func (UserApi) UserUpdatePassword(c *gin.Context) {
 		return
 	}
 	hashPwd := utils.HashAndSalt(cr.Pwd)
+
 	err = global.DB.Model(&user).Update("password", hashPwd).Error
 	if err != nil {
 		global.Log.Error(err)
