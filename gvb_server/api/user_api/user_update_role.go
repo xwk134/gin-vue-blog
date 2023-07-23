@@ -38,5 +38,5 @@ func (UserApi) UserUpdateRoleView(c *gin.Context) {
 		res.FailWithMessage("修改权限失败", c)
 		return
 	}
-	res.FailWithMessage("修改权限成功", c)
+	res.OkWithMessage("修改权限成功", c)
 }
