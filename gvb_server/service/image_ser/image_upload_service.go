@@ -72,6 +72,8 @@ func (ImageService) ImageUploadService(file *multipart.FileHeader) (res FileUplo
 	fileType := ctype.Local
 	res.Msg = "图片上传成功"
 	res.IsSuccess = true
+	filePath = "/" + filePath
+
 	if global.Config.QiNiu.Enable {
 		filePath, err = qiniu.UploadImage(byteData, fileName, global.Config.QiNiu.Prefix)
 		if err != nil {

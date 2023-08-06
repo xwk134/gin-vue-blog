@@ -19,7 +19,7 @@ type BannerModel struct {
 func (b *BannerModel) BeforeDelete(tx *gorm.DB) (err error) {
 	if b.ImageType == ctype.Local {
 		//删除本地图片
-		err = os.Remove(b.Path)
+		err = os.Remove(b.Path[1:])
 		if err != nil {
 			global.Log.Error(err)
 			return err
