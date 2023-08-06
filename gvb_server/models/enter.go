@@ -15,6 +15,7 @@ type PageInfo struct {
 	Key   string `form:"key"`
 	Limit int    `form:"limit"`
 	Sort  string `form:"sort"`
+	Role  string `form:"role"`
 }
 
 type RemoveRequest struct {

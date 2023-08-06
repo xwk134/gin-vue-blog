@@ -59,7 +59,7 @@ email:
   user_tls: false
 jwy:
   secret: ""
-  expires: 2
+  expires: 72
   issuer: "test"
 redis:
   ip: 47.100.186.122
