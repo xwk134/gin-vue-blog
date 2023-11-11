@@ -41,13 +41,13 @@ qq:
   key: gghj548549jkj784598
   redirect: ""
 qi_niu:
-  enable: false
+  enable: true
   access_key: _s5B-HcWimJDXGL8yBpPguYkhzHQYUyl6yhzXGjE
   secret_key: Bt0g3IaLgpBPQsB84oVuj1lIbTfrmdlHLifG2rJr
   bucket: gotests
   cdn: testgo.club/
   zone: as0
-  prefix: "gvb"
+  prefix: "gvb/images"
   size: 5
 email:
   host: smtp.qq.com

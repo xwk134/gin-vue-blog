@@ -24,7 +24,7 @@ func (UserService) CreateUser(userName, nickName, password string, role ctype.Ro
 	//头像问题
 	//1、默认头像
 	//2、随机选择头像
-	avatar := "/uploads/file/京东.png"
+	avatar := "http://testgo.club//gvb/images/20231111192309_GgSa3zGSdPDZQd.png"
 
 	//入库
 	err = global.DB.Create(&models.UserModel{
